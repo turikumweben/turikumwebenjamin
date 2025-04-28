@@ -1,75 +1,494 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>web</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ben</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #f0f8ff, #e6e6fa);
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #2e7d32;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #4CAF50;
+        }
+
+        section p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+            animation: bounce 2s infinite;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-size: 1.5rem;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.2);
+            color: #2e7d32;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .project-card {
+            width: 300px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-card h3 {
+            padding: 10px;
+            color: #4CAF50;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            margin-top: 20px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .projects {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
 <body>
-	<center>
-	<fieldset style=" height: 190vh; width: 90vh;border-color: green;box-shadow: 8px 8px 8px aqua;b">
-	<div class="logo">
-		<p style="font-size: 12px;padding-right: 
-		400px;padding-top: 20px">BEN SOLUTION</p>
-	</div>
-		<div class="main">
-			<nav>
-				<li><a href="web.php">HOMO</a></li>
-				<li><a href="">PROJECT</a></li>
-				<li><a href="">RESUME</a></li>
-				<li><a href="ben.php">SIGNIN</a></li>
-			</nav>
-		</div>
-	<h2>WELCOME TO MY PORTFORIO WEBSITE</h2>
-	<h1><span style="color: yellow;">HEY IAM BEN, IAM A</span><span style="color: red;"> WEB DEVELOPER </span></h1>
-	<div class="left" style="background-color: yellow;">
-		<h2 style="box-shadow: 2px 2px 2px blue;" class="vie">THIS WEB IS THE BEST IT WILL GAIN YOU MANY THINGS</h2>
-		<img src="bb.png" width="100px" height="100px">
-	</div>
-	<div class="right">
-<p style="padding-top: 20px;">building successful product is challenge i am energetic user experience design interface and web development.</p>
-<a href=""><button class="me">download resume</button></a>
-<h3 style="padding-top:20px">I`m BENIT</h3>
-<p style="padding-top=20px"><strong>grand to see you!</strong></p>
-<p><span style="padding-top:20px">i`m asoftware developer! ican help you build a product , feature or</span></p>
-<p><span> some of my work and experience if you like what you see and have</span></p>
-<p> <span>coded , dont hestiate to contact me.</span></p>
-<h4><span style="color: orange;">LET`S CONNECT</span></h4>
-<div class="img">
-	<img src="4.png">
-	<p>+250 781033491</p>
-	<img src="2.png">
-	<p>turikumweben</p>
-	<img src="3.png">
-	<p>turikumweben</p>
-	<img src="6.png">
-	<p>#ben_250</p>
-</div>
-<div class="center" >
-	<h3>RECENT PROJECT</h3>
-</div>
-<div class="kem">
-	<img src="fiston.jpg" width="90px" height="100px" border="2px" style="border-radius:80px;" class="" >
-	<img src="0.png" width="90px" height="100px" border="2px" style="border-radius:80px;" class="" >
-   <img src="w.jpg" width="90px" height="100px" border="2px" style="border-radius:80px;" class="" >
-   
-  <a href=""><button class="ko" style="padding-top:0px;padding-right: 40px;border-radius: 8px;background-color: chocolate;">source code</button></a>
-  <a href=""><button class="ko" style="padding-top:0px;padding-right: 40px;border-radius: 8px;background-color: chocolate;">live demo</button></a> 
-</div>
-<div class="left">
-	<h2>EXPERIENCE</h2>
-	<h3> I HAVE EXPERIENCE ABOUT CODING BECAUSE IMAKE ENTERNESHIP IN ICT INNOVATION CENTER</h3>
-	<h3>I AM THE ONE IN PERFORMER IN ICT INNOVATION CENTER BECAUSE THEY GIVE THE CUP OF PERFOMENCE ICAN HELP YOU AS MINE THANK YOU LEADIES AND JEANTREMEN</h3>
-	<img src="2021.png" style="padding-top:40px;padding-right: 40px;">
-	<a href="nziza.php">click here to create your account</a>
+    <header>
+        <h1>Welcome to <span class="no">Ben's Portfolio </span></h1>
+        <p>Hey, I am Ben, a passionate Web Developer!</p>
+    </header>
 
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-</div>
-<div class="right">
-	<h2 style="padding-top:20PX">IAM INTERESTED TO WORK TO GETHER</h2>
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="img/b.png" alt="Profile Picture" class="profile-img">
+        <p class="text">I am a software developer with experience in building user-friendly websites and applications. I can help you build a product, feature, or website that meets your needs.</p>
+				<style>
+			/* Add this to your existing CSS */
+			@keyframes typing {
+				from {
+					width: 0;
+				}
+				to {
+					width: 100%;
+				}
+			}
+		
+			@keyframes blink {
+				50% {
+					border-color: transparent;
+				}
+			}
+		
+			.text {
+				font-family: 'Courier New', Courier, monospace; /* Attractive typewriter font */
+				font-size: 1.5rem;
+				color: #4CAF50; /* Green color */
+				border-right: 2px solid #4CAF50; /* Cursor effect */
+				white-space: nowrap;
+				overflow: hidden;
+				width: 0; /* Start with no width */
+				animation: typing 4s steps(30, end), blink 0.5s step-end infinite;
+			}
+		</style>
+    </section>
 
+    <section id="projects">
+        <h2>Recent Projects</h2><style>
+			/* General Reset */
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+		
+			body {
+				font-family: Arial, sans-serif;
+				background: linear-gradient(to bottom, #f0f8ff, #e6e6fa);
+				color: #333;
+				line-height: 1.6;
+				overflow-x: hidden;
+			}
+		
+			header {
+				text-align: center;
+				padding: 20px;
+				background-color: #4CAF50;
+				color: white;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+			}
+			header h1 span {
+				color: #FF5733; /* Highlighted text color */
+			}
+		
+			header h1 {
+				font-size: 2.5rem;
+				animation: fadeIn 2s ease-in-out;
+			}
+		
+			header p {
+				font-size: 1.2rem;
+				margin-top: 10px;
+			}
+		
+			nav {
+				display: flex;
+				justify-content: center;
+				gap: 20px;
+				margin: 20px 0;
+			}
+		
+			nav a {
+				text-decoration: none;
+				color: #4CAF50;
+				font-weight: bold;
+				transition: color 0.3s ease;
+			}
+		
+			nav a:hover {
+				color: #2e7d32;
+			}
+		
+			section {
+				padding: 20px;
+				text-align: center;
+			}
+		
+			section h2 {
+				font-size: 2rem;
+				margin-bottom: 20px;
+				color: #4CAF50;
+			}
+		
+			section p {
+				font-size: 1rem;
+				margin-bottom: 20px;
+			}
+		
+			.profile-img {
+				width: 150px;
+				height: 150px;
+				border-radius: 50%;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+				margin: 20px auto;
+				animation: bounce 2s infinite;
+			}
+		
+			.social-links {
+				display: flex;
+				justify-content: center;
+				gap: 20px;
+				margin-top: 20px;
+			}
+				cd c:\Users\Admin\bem\turikumweben				cd c:\Users\Admin\bem\turikumweben				cd c:\Users\Admin\bem\turikumweben				cd c:\Users\Admin\bem\turikumweben
+			.social-links a {
+				text-decoration: none;
+				color: #4CAF50;
+				font-size: 1.5rem;
+				transition: transform 0.3s ease, color 0.3s ease;
+			}
+		
+			.social-links a:hover {
+				transform: scale(1.2);
+				color: #2e7d32;
+			}
+		
+			.projects {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				gap: 20px;
+			}
+		
+			.project-card {
+				width: 300px;
+				background: white;
+				border-radius: 10px;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+				overflow: hidden;
+				transition: transform 0.3s ease;
+			}
+		
+			.project-card:hover {
+				transform: translateY(-10px);
+			}
+		
+			.project-card img {
+				width: 100%;
+				height: 200px;
+				object-fit: cover;
+			}
+		
+			.project-card h3 {
+				padding: 10px;
+				color: #4CAF50;
+			}
+		
+			footer {
+				text-align: center;
+				padding: 20px;
+				background-color: #4CAF50;
+				color: white;
+				margin-top: 20px;
+			}
+		
+			footer p {
+				font-size: 1rem;
+			}
+		
+			@keyframes fadeIn {
+				from {
+					opacity: 0;
+				}
+				to {
+					opacity: 1;
+				}
+			}
+		
+			@keyframes bounce {
+				0%, 100% {
+					transform: translateY(0);
+				}
+				50% {
+					transform: translateY(-10px);
+				}
+			}
+		
+			/* Responsive Design */
+			@media (max-width: 768px) {
+				header h1 {
+					font-size: 2rem;
+				}
+		
+				header p {
+					font-size: 1rem;
+				}
+		
+				.projects {
+					flex-direction: column;
+					align-items: center;
+				}
+		
+				.project-card {
+					width: 90%; /* Adjust width for smaller screens */
+				}
+		
+				.social-links a {
+					font-size: 1.2rem;
+				}
+			}
+		
+			@media (max-width: 480px) {
+				header h1 {
+					font-size: 1.8rem;
+				}
+		
+				header p {
+					font-size: 0.9rem;
+				}
+		
+				.profile-img {
+					width: 120px;
+					height: 120px;
+				}
+		
+				.project-card {
+					width: 100%; /* Full width for very small screens */
+				}
+		
+				.social-links a {
+					font-size: 1rem;
+				}
+			}
+		</style>	<style>
+			@keyframes typing {
+				from {
+					width: 0;
+				}
+				to {
+					width: 100%;
+				}
+			}
+		
+			@keyframes blink {
+				50% {
+					border-color: transparent;
+				}
+			}
+		
+			.text {
+				font-family: 'Courier New', Courier, monospace; /* Attractive typewriter font */
+				font-size: 2rem; /* Increased font size */
+				color: #4CAF50; /* Green color */
+				border-right: 3px solid #FF5733; /* Orange cursor effect */
+				white-space: nowrap;
+				overflow: hidden;
+				width: 0; /* Start with no width */
+				animation: typing 6s steps(40, end) infinite, blink 0.7s step-end infinite; /* Infinite typing animation */
+			}
+		</style>
+        <div class="projects">
+            <div class="project-card">
+				<style>
+					/* ...existing code... */
+				
+					.project-card img {
+						width: 100%;
+						height: 200px;
+						object-fit: cover; /* Ensures the image fits nicely */
+						border-radius: 5px; /* Optional: Adds rounded corners */
+					}
+				
+					/* ...existing code... */
+				</style><img src="img/no.jpg" alt="Project 1">
+                <h3>EXCEM</h3>
+            </div>
+            <div class="project-card">
+                <img src="img/1.jpg" alt="Project 2">
+                <h3>REVOLUTION</h3>
+            </div>
+            <div class="project-card">
+                <img src="img/2 (2).jpg" alt="Project 3">
+                <h3>REMOTE CONTROL</h3>
+            </div>
+        </div>
+    </section>
 
-</fieldset>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me on any of the platforms below:</p>
+        <div class="social-links">
+            <a href="https://wa.me/250794082983" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://facebook.com/Turikumwe Ben" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com/Turikumwe_ben" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Ben Portfolio. All rights reserved.</p>
+    </footer>
 </body>
-</center>
 </html>
